@@ -1,0 +1,34 @@
+* {
+    font-size: large;
+    color: black;
+}
+
+body {
+    background-color: aqua;
+}
+
+div {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    opacity: 0.5;
+}
+
+.center {
+    text-align: center;
+}
+
+#data {
+    color: blueviolet;
+}
+
+/* This is a single-line comment */
+
+/* This is
+a multi-line
+comment */
+
+p.dotted {
+    border-style: dotted;
+}
