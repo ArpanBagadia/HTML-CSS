@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            transition: width 2s, height 2s, background-color 3s;
+        }
+
+        div:hover {
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+        }
+
+        .button {
+            background-color: rebeccapurple;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+
+        .button1:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <button class="button button1">Shadow on Hover</button>
+</body>
+
+</html>
