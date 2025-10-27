@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 1500px;
+            padding: 20px;
+            font-family: Arial;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            line-height: 150px;
+        }
+
+        .container {
+            position: relative;
+            border: 2px dashed #555;
+            height: 300px;
+            margin-top: 30px;
+        }
+
+        .static {
+            background: #888;
+            position: static;
+        }
+
+        .relative {
+            background: #f39c12;
+            position: relative;
+            top: 20px;
+            left: 30px;
+        }
+
+        .absolute {
+            background: #3498db;
+            position: absolute;
+            top: 50px;
+            right: 30px;
+        }
+
+        .fixed {
+            background: #e74c3c;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .sticky {
+            background: #2ecc71;
+            position: sticky;
+            top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Position Examples</h2>
+
+    <div class="box static">Static</div>
+    <div class="box relative">Relative</div>
+
+    <div class="container">
+        <div class="box absolute">Absolute</div>
+    </div>
+
+    <div class="box sticky">Sticky</div>
+    <div class="box fixed">Fixed</div>
+
+</body>
+
+</html>

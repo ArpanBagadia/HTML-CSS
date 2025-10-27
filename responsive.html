@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'menu main main main main right'
+                'footer footer footer footer footer footer';
+            gap: 10px;
+            background-color: white;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .item1 {
+            grid-area: header;
+            background-color: blueviolet;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .item1>h1 {
+            font-size: 40px;
+        }
+
+        .item2 {
+            grid-area: menu;
+        }
+
+        .item2 ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .item2 li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: palegreen;
+            color: #ffffff;
+        }
+
+        .item2 li:hover {
+            background-color: #0099cc;
+        }
+
+        .item3 {
+            grid-area: main;
+        }
+
+        .item3>h1 {
+            font-size: 30px;
+            margin-bottom: 7px;
+        }
+
+        .item3>p {
+            margin-bottom: 7px;
+        }
+
+        .item4 {
+            grid-area: right;
+            border: 2px solid chocolate;
+            padding: 15px;
+        }
+
+        .item4>h2 {
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+
+        .item4 li {
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        .item5 {
+            grid-area: footer;
+            background-color: #0099cc;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .item1 {
+                grid-area: 1 / span 6;
+            }
+
+            .item2 {
+                grid-area: 2 / span 6;
+            }
+
+            .item3 {
+                grid-area: 3 / span 6;
+            }
+
+            .item4 {
+                grid-area: 4 / span 6;
+            }
+
+            .item5 {
+                grid-area: 5 / span 6;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <div class="item1">
+            <h1>India</h1>
+        </div>
+
+        <div class="item2">
+            <ul>
+                <li>Gujarat</li>
+                <li>Goa</li>
+                <li>Delhi</li>
+                <li>New Delhi</li>
+            </ul>
+        </div>
+
+        <div class="item3">
+            <h1>Gujarat</h1>
+            <p>Gujarat is a state along the western coast of India. Its
+                coastline of about 1,600 km (990 mi) is the longest in the country, most of which lies on the Kathiawar
+                peninsula. Gujarat is the fifth-largest Indian state by area, covering some 196,024 km2 (75,685 sq mi);
+                and the ninth-most populous state, with a population of 60.4 million in 2011. It is bordered by
+                Rajasthan to the northeast, Dadra and Nagar Haveli and Daman and Diu to the south, Maharashtra to the
+                southeast, Madhya Pradesh to the east, and the Arabian Sea and the Pakistani province of Sindh to the
+                west. Gujarat's capital city is Gandhinagar, while its largest city is Ahmedabad.[13] The Gujaratis are
+                indigenous to the state and their language, Gujarati, is the state's official language..</p>
+        </div>
+
+        <div class="item4">
+            <h2>Facts:</h2>
+            <ul>
+                <li>Gujarat's capital city is Gandhinagar</li>
+                <li>Gujarati, is the state's official language</li>
+            </ul>
+        </div>
+
+        <div class="item5">
+            <p>Resize the browser window to see how the content respond to the resizing.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
