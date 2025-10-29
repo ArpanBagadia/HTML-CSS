@@ -20,7 +20,7 @@ header {
     z-index: 1;
 }
 
-.container {
+.container {    
     display: flex;
     margin-top: 66px; 
 }
